@@ -1,0 +1,37 @@
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\Database.mdf
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\Database_log.ldf
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ImperialPizzaV2.exe.config
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ImperialPizzaV2.exe
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ImperialPizzaV2.pdb
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ReaLTaiizor.dll
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Login.resources
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.MenuDrink.resources
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.MenuFood.resources
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Payment.resources
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Properties.Resources.resources
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Register.resources
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csproj.GenerateResource.cache
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csproj.CoreCompileInputs.cache
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csproj.CopyComplete
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.exe
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.pdb
+D:\YGI\Program\C#\Important\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csprojAssemblyReference.cache
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\Database.mdf
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\Database_log.ldf
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ImperialPizzaV2.exe.config
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ImperialPizzaV2.exe
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ImperialPizzaV2.pdb
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\bin\Debug\ReaLTaiizor.dll
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csprojAssemblyReference.cache
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Dashboard.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Login.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.MenuDrink.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.MenuFood.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Payment.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Properties.Resources.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.Register.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csproj.GenerateResource.cache
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csproj.CoreCompileInputs.cache
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.csproj.CopyComplete
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.exe
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\ImperialPizzaV2\ImperialPizzaV2\obj\Debug\ImperialPizzaV2.pdb

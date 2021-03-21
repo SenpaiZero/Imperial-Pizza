@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImperialPizzaV2", "ImperialPizzaV2\ImperialPizzaV2.csproj", "{CC14F1E7-2668-4ED3-8F5F-A0028FA2777A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1ADFE8DC-ADC3-4727-8387-7CEE6D4FDB0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC14F1E7-2668-4ED3-8F5F-A0028FA2777A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC14F1E7-2668-4ED3-8F5F-A0028FA2777A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC14F1E7-2668-4ED3-8F5F-A0028FA2777A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC14F1E7-2668-4ED3-8F5F-A0028FA2777A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CDFE7DC-1E9E-4453-B2AD-7924A72CBF0F}
+	EndGlobalSection
+EndGlobal
