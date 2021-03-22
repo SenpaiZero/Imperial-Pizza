@@ -31,7 +31,6 @@ namespace ImperialPizzaV2
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuDrink));
             this.DRINK = new ReaLTaiizor.Forms.NightForm();
-            this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.food = new ReaLTaiizor.Controls.LostButton();
             this.CheckOut = new ReaLTaiizor.Controls.LostButton();
             this.sprite = new ReaLTaiizor.Controls.MaterialRadioButton();
@@ -40,6 +39,7 @@ namespace ImperialPizzaV2
             this.hopePictureBox3 = new ReaLTaiizor.Controls.HopePictureBox();
             this.coca = new ReaLTaiizor.Controls.MaterialRadioButton();
             this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
+            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.DRINK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox3)).BeginInit();
@@ -49,7 +49,7 @@ namespace ImperialPizzaV2
             // DRINK
             // 
             this.DRINK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
-            this.DRINK.Controls.Add(this.nightControlBox1);
+            this.DRINK.Controls.Add(this.metroControlBox1);
             this.DRINK.Controls.Add(this.food);
             this.DRINK.Controls.Add(this.CheckOut);
             this.DRINK.Controls.Add(this.sprite);
@@ -72,30 +72,6 @@ namespace ImperialPizzaV2
             this.DRINK.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
             this.DRINK.TitleBarTextColor = System.Drawing.Color.Gainsboro;
             this.DRINK.Click += new System.EventHandler(this.DRINK_Click);
-            // 
-            // nightControlBox1
-            // 
-            this.nightControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nightControlBox1.DefaultLocation = true;
-            this.nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMaximizeButton = true;
-            this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMinimizeButton = true;
-            this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(713, 0);
-            this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Name = "nightControlBox1";
-            this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            this.nightControlBox1.TabIndex = 15;
             // 
             // food
             // 
@@ -207,6 +183,34 @@ namespace ImperialPizzaV2
             this.hopePictureBox1.TabIndex = 2;
             this.hopePictureBox1.TabStop = false;
             // 
+            // metroControlBox1
+            // 
+            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
+            this.metroControlBox1.IsDerivedStyle = true;
+            this.metroControlBox1.Location = new System.Drawing.Point(752, 0);
+            this.metroControlBox1.MaximizeBox = false;
+            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeBox = true;
+            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Name = "metroControlBox1";
+            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.metroControlBox1.StyleManager = null;
+            this.metroControlBox1.TabIndex = 15;
+            this.metroControlBox1.Text = "metroControlBox1";
+            this.metroControlBox1.ThemeAuthor = "Taiizor";
+            this.metroControlBox1.ThemeName = "MetroDark";
+            // 
             // MenuDrink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,6 +244,6 @@ namespace ImperialPizzaV2
         private ReaLTaiizor.Controls.MaterialRadioButton coca;
         private ReaLTaiizor.Controls.LostButton food;
         private ReaLTaiizor.Controls.LostButton CheckOut;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
+        private ReaLTaiizor.Controls.MetroControlBox metroControlBox1;
     }
 }

@@ -18,10 +18,20 @@ namespace ImperialPizzaV2
 
         public static int pizza1, pizza2, pizza3, pizza4, pizza5;
         public static int OrderP1, OrderP2, OrderP3, OrderP4, OrderP5;
+
+        private void MenuFood_Load_1(object sender, EventArgs e)
+        {
+
+            this.MaximumSize = this.Size;
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            DoubleBuffered = true;
+        }
+
         public MenuFood()
         {
             InitializeComponent();
         }
+
 
         private void Water_Click(object sender, EventArgs e)
         {
@@ -78,6 +88,7 @@ namespace ImperialPizzaV2
                 pizza1 = 580;
                 this.Hide();
                 pay.ShowDialog();
+
             }
             else if (California.Checked) 
             {
@@ -118,16 +129,10 @@ namespace ImperialPizzaV2
 
         }
 
-        private void MenuFood_Load(object sender, EventArgs e)
-        {
-
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            DoubleBuffered = true;
-        }
 
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
-
         }
+
     }
 }

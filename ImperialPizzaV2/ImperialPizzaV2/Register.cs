@@ -14,6 +14,7 @@ namespace ImperialPizzaV2
     public partial class Register : Form
     {
 
+        SqlConnection cn;
         public Register()
         {
             InitializeComponent();
@@ -21,6 +22,7 @@ namespace ImperialPizzaV2
 
         private void Register_Load(object sender, EventArgs e)
         {
+            this.MaximumSize = this.Size;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
         }
@@ -36,7 +38,7 @@ namespace ImperialPizzaV2
             {
                 if (txtpassword.Text == txtconfirmpassword.Text)
                 {
-                    using (SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"))
+                    using (cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"))
                     {
                         cn.Open();
                         SqlCommand cmd = new SqlCommand("select * from LoginTable where username='" + txtusername.Text + "'", cn);
@@ -73,6 +75,7 @@ namespace ImperialPizzaV2
             Login login = new Login();
             this.Hide();
             login.ShowDialog();
+            cn.Close();
         }
 
         private void lostPanel1_Click(object sender, EventArgs e)

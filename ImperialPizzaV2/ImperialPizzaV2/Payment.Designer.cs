@@ -34,13 +34,13 @@ namespace ImperialPizzaV2
             this.CheckOut = new ReaLTaiizor.Controls.LostButton();
             this.materialCheckBox1 = new ReaLTaiizor.Controls.MaterialCheckBox();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
-            this.multi = new System.Windows.Forms.TextBox();
-            this.materialTextBox6 = new ReaLTaiizor.Controls.MaterialTextBox();
-            this.materialTextBox5 = new ReaLTaiizor.Controls.MaterialTextBox();
-            this.materialTextBox4 = new ReaLTaiizor.Controls.MaterialTextBox();
-            this.materialTextBox3 = new ReaLTaiizor.Controls.MaterialTextBox();
-            this.materialTextBox2 = new ReaLTaiizor.Controls.MaterialTextBox();
-            this.materialTextBox1 = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.Address = new System.Windows.Forms.TextBox();
+            this.PhoneNumber = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.EmailAddress = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.Name = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.Date = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.CardNumber = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.CVV = new ReaLTaiizor.Controls.MaterialTextBox();
             this.lostPanel1 = new ReaLTaiizor.Controls.LostPanel();
             this.nightTextBox1 = new ReaLTaiizor.Controls.NightTextBox();
             this.Pay.SuspendLayout();
@@ -54,13 +54,13 @@ namespace ImperialPizzaV2
             this.Pay.Controls.Add(this.CheckOut);
             this.Pay.Controls.Add(this.materialCheckBox1);
             this.Pay.Controls.Add(this.nightControlBox1);
-            this.Pay.Controls.Add(this.multi);
-            this.Pay.Controls.Add(this.materialTextBox6);
-            this.Pay.Controls.Add(this.materialTextBox5);
-            this.Pay.Controls.Add(this.materialTextBox4);
-            this.Pay.Controls.Add(this.materialTextBox3);
-            this.Pay.Controls.Add(this.materialTextBox2);
-            this.Pay.Controls.Add(this.materialTextBox1);
+            this.Pay.Controls.Add(this.Address);
+            this.Pay.Controls.Add(this.PhoneNumber);
+            this.Pay.Controls.Add(this.EmailAddress);
+            this.Pay.Controls.Add(this.Name);
+            this.Pay.Controls.Add(this.Date);
+            this.Pay.Controls.Add(this.CardNumber);
+            this.Pay.Controls.Add(this.CVV);
             this.Pay.Controls.Add(this.lostPanel1);
             this.Pay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pay.DrawIcon = false;
@@ -75,6 +75,7 @@ namespace ImperialPizzaV2
             this.Pay.Text = "PAYMENT";
             this.Pay.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
             this.Pay.TitleBarTextColor = System.Drawing.Color.Gainsboro;
+            this.Pay.Click += new System.EventHandler(this.Pay_Click);
             // 
             // backBtn
             // 
@@ -144,109 +145,117 @@ namespace ImperialPizzaV2
             this.nightControlBox1.Name = "nightControlBox1";
             this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
             this.nightControlBox1.TabIndex = 12;
+            this.nightControlBox1.Click += new System.EventHandler(this.nightControlBox1_Click);
             // 
-            // multi
+            // Address
             // 
-            this.multi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(46)))), ((int)(((byte)(49)))));
-            this.multi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.multi.Location = new System.Drawing.Point(533, 64);
-            this.multi.Multiline = true;
-            this.multi.Name = "multi";
-            this.multi.Size = new System.Drawing.Size(303, 205);
-            this.multi.TabIndex = 11;
-            this.multi.Text = "FULL ADDRESS";
-            this.multi.MouseClick += new System.Windows.Forms.MouseEventHandler(this.multi_MouseClick);
-            this.multi.TextChanged += new System.EventHandler(this.multi_TextChanged);
+            this.Address.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(46)))), ((int)(((byte)(49)))));
+            this.Address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Address.ForeColor = System.Drawing.Color.Gray;
+            this.Address.Location = new System.Drawing.Point(533, 64);
+            this.Address.Multiline = true;
+            this.Address.Name = "Address";
+            this.Address.Size = new System.Drawing.Size(303, 205);
+            this.Address.TabIndex = 11;
+            this.Address.Text = "FULL ADDRESS";
+            this.Address.MouseClick += new System.Windows.Forms.MouseEventHandler(this.multi_MouseClick);
+            this.Address.TextChanged += new System.EventHandler(this.multi_TextChanged);
             // 
-            // materialTextBox6
+            // PhoneNumber
             // 
-            this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox6.Hint = "Phone Number";
-            this.materialTextBox6.Location = new System.Drawing.Point(46, 221);
-            this.materialTextBox6.MaxLength = 50;
-            this.materialTextBox6.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialTextBox6.Multiline = false;
-            this.materialTextBox6.Name = "materialTextBox6";
-            this.materialTextBox6.Size = new System.Drawing.Size(432, 50);
-            this.materialTextBox6.TabIndex = 9;
-            this.materialTextBox6.Text = "";
+            this.PhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PhoneNumber.Depth = 0;
+            this.PhoneNumber.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.PhoneNumber.ForeColor = System.Drawing.Color.Gray;
+            this.PhoneNumber.Hint = "Phone Number";
+            this.PhoneNumber.Location = new System.Drawing.Point(22, 221);
+            this.PhoneNumber.MaxLength = 50;
+            this.PhoneNumber.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.PhoneNumber.Multiline = false;
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.Size = new System.Drawing.Size(456, 50);
+            this.PhoneNumber.TabIndex = 9;
+            this.PhoneNumber.Text = "";
             // 
-            // materialTextBox5
+            // EmailAddress
             // 
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.Hint = "Email Address";
-            this.materialTextBox5.Location = new System.Drawing.Point(46, 143);
-            this.materialTextBox5.MaxLength = 50;
-            this.materialTextBox5.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(432, 50);
-            this.materialTextBox5.TabIndex = 8;
-            this.materialTextBox5.Text = "";
+            this.EmailAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailAddress.Depth = 0;
+            this.EmailAddress.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.EmailAddress.ForeColor = System.Drawing.Color.Gray;
+            this.EmailAddress.Hint = "Email Address";
+            this.EmailAddress.Location = new System.Drawing.Point(22, 143);
+            this.EmailAddress.MaxLength = 50;
+            this.EmailAddress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.EmailAddress.Multiline = false;
+            this.EmailAddress.Name = "EmailAddress";
+            this.EmailAddress.Size = new System.Drawing.Size(456, 50);
+            this.EmailAddress.TabIndex = 8;
+            this.EmailAddress.Text = "";
             // 
-            // materialTextBox4
+            // Name
             // 
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.Hint = "Name";
-            this.materialTextBox4.Location = new System.Drawing.Point(46, 64);
-            this.materialTextBox4.MaxLength = 50;
-            this.materialTextBox4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(432, 50);
-            this.materialTextBox4.TabIndex = 7;
-            this.materialTextBox4.Text = "";
+            this.Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Name.Depth = 0;
+            this.Name.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Name.ForeColor = System.Drawing.Color.Gray;
+            this.Name.Hint = "Name";
+            this.Name.Location = new System.Drawing.Point(22, 64);
+            this.Name.MaxLength = 50;
+            this.Name.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.Name.Multiline = false;
+            this.Name.Name = "Name";
+            this.Name.Size = new System.Drawing.Size(456, 50);
+            this.Name.TabIndex = 7;
+            this.Name.Text = "";
             // 
-            // materialTextBox3
+            // Date
             // 
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.Hint = "DD/YY";
-            this.materialTextBox3.Location = new System.Drawing.Point(378, 297);
-            this.materialTextBox3.MaxLength = 50;
-            this.materialTextBox3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(100, 50);
-            this.materialTextBox3.TabIndex = 6;
-            this.materialTextBox3.Text = "";
+            this.Date.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Date.Depth = 0;
+            this.Date.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Date.ForeColor = System.Drawing.Color.Gray;
+            this.Date.Hint = "DD/YY";
+            this.Date.Location = new System.Drawing.Point(378, 297);
+            this.Date.MaxLength = 50;
+            this.Date.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.Date.Multiline = false;
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(100, 50);
+            this.Date.TabIndex = 6;
+            this.Date.Text = "";
             // 
-            // materialTextBox2
+            // CardNumber
             // 
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.Hint = "Card Number";
-            this.materialTextBox2.Location = new System.Drawing.Point(22, 297);
-            this.materialTextBox2.MaxLength = 50;
-            this.materialTextBox2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(341, 50);
-            this.materialTextBox2.TabIndex = 5;
-            this.materialTextBox2.Text = "";
+            this.CardNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CardNumber.Depth = 0;
+            this.CardNumber.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.CardNumber.ForeColor = System.Drawing.Color.Gray;
+            this.CardNumber.Hint = "Card Number";
+            this.CardNumber.Location = new System.Drawing.Point(22, 297);
+            this.CardNumber.MaxLength = 50;
+            this.CardNumber.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.CardNumber.Multiline = false;
+            this.CardNumber.Name = "CardNumber";
+            this.CardNumber.Size = new System.Drawing.Size(341, 50);
+            this.CardNumber.TabIndex = 5;
+            this.CardNumber.Text = "";
             // 
-            // materialTextBox1
+            // CVV
             // 
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.Hint = "CVV";
-            this.materialTextBox1.Location = new System.Drawing.Point(499, 297);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(100, 50);
-            this.materialTextBox1.TabIndex = 4;
-            this.materialTextBox1.Text = "";
+            this.CVV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CVV.Depth = 0;
+            this.CVV.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.CVV.ForeColor = System.Drawing.Color.Gray;
+            this.CVV.Hint = "CVV";
+            this.CVV.Location = new System.Drawing.Point(499, 297);
+            this.CVV.MaxLength = 50;
+            this.CVV.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.CVV.Multiline = false;
+            this.CVV.Name = "CVV";
+            this.CVV.Size = new System.Drawing.Size(100, 50);
+            this.CVV.TabIndex = 4;
+            this.CVV.Text = "";
             // 
             // lostPanel1
             // 
@@ -272,7 +281,7 @@ namespace ImperialPizzaV2
             this.nightTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.nightTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(131)))), ((int)(((byte)(140)))));
             this.nightTextBox1.Image = null;
-            this.nightTextBox1.Location = new System.Drawing.Point(74, 29);
+            this.nightTextBox1.Location = new System.Drawing.Point(40, 33);
             this.nightTextBox1.MaxLength = 32767;
             this.nightTextBox1.Multiline = false;
             this.nightTextBox1.Name = "nightTextBox1";
@@ -296,7 +305,7 @@ namespace ImperialPizzaV2
             this.Controls.Add(this.Pay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1440, 860);
-            this.Name = "Payment";
+            this.nightTextBox1.Name = "Pay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payment";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
@@ -312,14 +321,14 @@ namespace ImperialPizzaV2
 
         private ReaLTaiizor.Forms.NightForm Pay;
         private ReaLTaiizor.Controls.NightTextBox nightTextBox1;
-        private ReaLTaiizor.Controls.MaterialTextBox materialTextBox6;
-        private ReaLTaiizor.Controls.MaterialTextBox materialTextBox5;
-        private ReaLTaiizor.Controls.MaterialTextBox materialTextBox4;
-        private ReaLTaiizor.Controls.MaterialTextBox materialTextBox3;
-        private ReaLTaiizor.Controls.MaterialTextBox materialTextBox2;
-        private ReaLTaiizor.Controls.MaterialTextBox materialTextBox1;
+        private ReaLTaiizor.Controls.MaterialTextBox PhoneNumber;
+        private ReaLTaiizor.Controls.MaterialTextBox EmailAddress;
+        private ReaLTaiizor.Controls.MaterialTextBox Name;
+        private ReaLTaiizor.Controls.MaterialTextBox Date;
+        private ReaLTaiizor.Controls.MaterialTextBox CardNumber;
+        private ReaLTaiizor.Controls.MaterialTextBox CVV;
         private ReaLTaiizor.Controls.LostPanel lostPanel1;
-        private System.Windows.Forms.TextBox multi;
+        private System.Windows.Forms.TextBox Address;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private ReaLTaiizor.Controls.LostButton CheckOut;
         private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox1;

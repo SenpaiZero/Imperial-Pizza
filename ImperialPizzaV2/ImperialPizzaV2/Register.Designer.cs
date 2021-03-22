@@ -30,6 +30,9 @@ namespace ImperialPizzaV2
         private void InitializeComponent()
         {
             this.nightForm1 = new ReaLTaiizor.Forms.NightForm();
+            this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.headerLabel1 = new ReaLTaiizor.Controls.HeaderLabel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.lostPanel1 = new ReaLTaiizor.Controls.LostPanel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
@@ -38,10 +41,7 @@ namespace ImperialPizzaV2
             this.txtusername = new ReaLTaiizor.Controls.MaterialTextBox();
             this.txtconfirmpassword = new ReaLTaiizor.Controls.MaterialTextBox();
             this.txtpassword = new ReaLTaiizor.Controls.MaterialTextBox();
-            this.headerLabel1 = new ReaLTaiizor.Controls.HeaderLabel();
-            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
-            this.bigLabel2 = new ReaLTaiizor.Controls.BigLabel();
-            this.nightControlBox2 = new ReaLTaiizor.Controls.NightControlBox();
+            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.nightForm1.SuspendLayout();
             this.lostPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +49,7 @@ namespace ImperialPizzaV2
             // nightForm1
             // 
             this.nightForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
-            this.nightForm1.Controls.Add(this.nightControlBox2);
+            this.nightForm1.Controls.Add(this.metroControlBox1);
             this.nightForm1.Controls.Add(this.bigLabel2);
             this.nightForm1.Controls.Add(this.bigLabel1);
             this.nightForm1.Controls.Add(this.headerLabel1);
@@ -68,6 +68,43 @@ namespace ImperialPizzaV2
             this.nightForm1.Text = "REGISTER";
             this.nightForm1.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
             this.nightForm1.TitleBarTextColor = System.Drawing.Color.Gainsboro;
+            // 
+            // bigLabel2
+            // 
+            this.bigLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bigLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel2.Location = new System.Drawing.Point(610, 294);
+            this.bigLabel2.Name = "bigLabel2";
+            this.bigLabel2.Size = new System.Drawing.Size(176, 193);
+            this.bigLabel2.TabIndex = 7;
+            this.bigLabel2.Text = "YGI SANTOS\r\nLEX TORRES\r\nJASSEN ERINE\r\nERIKA MERCADO\r\nALEX MAGRAMO\r\nTYRONE RAMIREZ" +
+    "\r\nNIEL CALUAG\r\nRENOSA ELLIS\r\nHANA SERABO\r\nSIMON CATADA\r\n";
+            this.bigLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel1.Location = new System.Drawing.Point(610, 244);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(176, 50);
+            this.bigLabel1.TabIndex = 6;
+            this.bigLabel1.Text = "MADE BY: IT MAWD 12 A BATCH 2";
+            this.bigLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // headerLabel1
+            // 
+            this.headerLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.headerLabel1.Font = new System.Drawing.Font("Showcard Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headerLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.headerLabel1.Location = new System.Drawing.Point(532, -20);
+            this.headerLabel1.Name = "headerLabel1";
+            this.headerLabel1.Size = new System.Drawing.Size(333, 353);
+            this.headerLabel1.TabIndex = 5;
+            this.headerLabel1.Text = "HI! WELCOME TO IMPERIAL PIZZA";
+            this.headerLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nightControlBox1
             // 
@@ -204,66 +241,33 @@ namespace ImperialPizzaV2
             this.txtpassword.TabIndex = 1;
             this.txtpassword.Text = "";
             // 
-            // headerLabel1
+            // metroControlBox1
             // 
-            this.headerLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.headerLabel1.Font = new System.Drawing.Font("Showcard Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.headerLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.headerLabel1.Location = new System.Drawing.Point(532, -20);
-            this.headerLabel1.Name = "headerLabel1";
-            this.headerLabel1.Size = new System.Drawing.Size(333, 353);
-            this.headerLabel1.TabIndex = 5;
-            this.headerLabel1.Text = "HI! WELCOME TO IMPERIAL PIZZA";
-            this.headerLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bigLabel1
-            // 
-            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel1.Location = new System.Drawing.Point(610, 244);
-            this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(176, 50);
-            this.bigLabel1.TabIndex = 6;
-            this.bigLabel1.Text = "MADE BY: IT MAWD 12 A BATCH 2";
-            this.bigLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bigLabel2
-            // 
-            this.bigLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.bigLabel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bigLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.bigLabel2.Location = new System.Drawing.Point(610, 294);
-            this.bigLabel2.Name = "bigLabel2";
-            this.bigLabel2.Size = new System.Drawing.Size(176, 193);
-            this.bigLabel2.TabIndex = 7;
-            this.bigLabel2.Text = "YGI SANTOS\r\nLEX TORRES\r\nJASSEN ERINE\r\nERIKA MERCADO\r\nALEX MAGRAMO\r\nTYRONE RAMIREZ" +
-    "\r\nNIEL CALUAG\r\nRENOSA ELLIS\r\nHANA SERABO\r\nSIMON CATADA\r\n";
-            this.bigLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // nightControlBox2
-            // 
-            this.nightControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightControlBox2.BackColor = System.Drawing.Color.Transparent;
-            this.nightControlBox2.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.nightControlBox2.CloseHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nightControlBox2.DefaultLocation = true;
-            this.nightControlBox2.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox2.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox2.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox2.EnableMaximizeButton = true;
-            this.nightControlBox2.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox2.EnableMinimizeButton = true;
-            this.nightControlBox2.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox2.Location = new System.Drawing.Point(729, 0);
-            this.nightControlBox2.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox2.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox2.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox2.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox2.Name = "nightControlBox2";
-            this.nightControlBox2.Size = new System.Drawing.Size(139, 31);
-            this.nightControlBox2.TabIndex = 8;
+            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
+            this.metroControlBox1.IsDerivedStyle = true;
+            this.metroControlBox1.Location = new System.Drawing.Point(768, 0);
+            this.metroControlBox1.MaximizeBox = false;
+            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeBox = true;
+            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Name = "metroControlBox1";
+            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.metroControlBox1.StyleManager = null;
+            this.metroControlBox1.TabIndex = 14;
+            this.metroControlBox1.Text = "metroControlBox1";
+            this.metroControlBox1.ThemeAuthor = "Taiizor";
+            this.metroControlBox1.ThemeName = "MetroDark";
             // 
             // Register
             // 
@@ -298,6 +302,6 @@ namespace ImperialPizzaV2
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private ReaLTaiizor.Controls.HeaderLabel headerLabel1;
         private ReaLTaiizor.Controls.BigLabel bigLabel2;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox2;
+        private ReaLTaiizor.Controls.MetroControlBox metroControlBox1;
     }
 }

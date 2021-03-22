@@ -23,6 +23,7 @@ namespace ImperialPizzaV2
         private void MenuDrink_Load(object sender, EventArgs e)
         {
 
+            this.MaximumSize = this.Size;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
         }

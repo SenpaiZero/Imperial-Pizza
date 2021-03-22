@@ -24,6 +24,7 @@ namespace ImperialPizzaV2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.MaximumSize = this.Size;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
             cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True");
@@ -35,33 +36,44 @@ namespace ImperialPizzaV2
             this.Hide();
             Register reg = new Register();
             reg.ShowDialog();
+            cn.Close();
             
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (txtpassword.Text != string.Empty || txtusername.Text != string.Empty)
+            if (Payment.isDone != true)
             {
-
-                cmd = new SqlCommand("select * from LoginTable where username='" + txtusername.Text + "' and password='" + txtpassword.Text + "'", cn);
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
+                if (txtpassword.Text != string.Empty || txtusername.Text != string.Empty)
                 {
-                    dr.Close();
-                    this.Hide();
-                    MenuFood food = new MenuFood();
-                    food.ShowDialog();
+
+                    cmd = new SqlCommand("select * from LoginTable where username='" + txtusername.Text + "' and password='" + txtpassword.Text + "'", cn);
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        dr.Close();
+                        this.Hide();
+                        MenuFood food = new MenuFood();
+                        food.ShowDialog();
+                        cn.Close();
+                        this.Close();
+                        return;
+                    }
+                    else
+                    {
+                        dr.Close();
+                        MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
                 }
                 else
                 {
-                    dr.Close();
-                    MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
             else
             {
-                MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please Restart The Application To Order Again.", "Restart", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -80,6 +92,10 @@ namespace ImperialPizzaV2
             Dashboard dashbaord = new Dashboard();
             dashbaord.ShowDialog();
             this.Hide();
+        }
+
+        private void nightControlBox1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

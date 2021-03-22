@@ -43,7 +43,7 @@ namespace ImperialPizzaV2
             this.hopePictureBox3 = new ReaLTaiizor.Controls.HopePictureBox();
             this.hopePictureBox2 = new ReaLTaiizor.Controls.HopePictureBox();
             this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-            this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
+            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.nightForm1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox4)).BeginInit();
@@ -55,6 +55,7 @@ namespace ImperialPizzaV2
             // nightForm1
             // 
             this.nightForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.nightForm1.Controls.Add(this.metroControlBox1);
             this.nightForm1.Controls.Add(this.Water);
             this.nightForm1.Controls.Add(this.CheckOut);
             this.nightForm1.Controls.Add(this.stLouis);
@@ -67,7 +68,6 @@ namespace ImperialPizzaV2
             this.nightForm1.Controls.Add(this.hopePictureBox3);
             this.nightForm1.Controls.Add(this.hopePictureBox2);
             this.nightForm1.Controls.Add(this.hopePictureBox1);
-            this.nightForm1.Controls.Add(this.nightControlBox1);
             this.nightForm1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nightForm1.DrawIcon = false;
             this.nightForm1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -248,30 +248,33 @@ namespace ImperialPizzaV2
             this.hopePictureBox1.TabIndex = 1;
             this.hopePictureBox1.TabStop = false;
             // 
-            // nightControlBox1
+            // metroControlBox1
             // 
-            this.nightControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nightControlBox1.DefaultLocation = true;
-            this.nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMaximizeButton = true;
-            this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMinimizeButton = true;
-            this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(729, 0);
-            this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Name = "nightControlBox1";
-            this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            this.nightControlBox1.TabIndex = 0;
-            this.nightControlBox1.Click += new System.EventHandler(this.nightControlBox1_Click);
+            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
+            this.metroControlBox1.IsDerivedStyle = true;
+            this.metroControlBox1.Location = new System.Drawing.Point(765, 0);
+            this.metroControlBox1.MaximizeBox = false;
+            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeBox = true;
+            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Name = "metroControlBox1";
+            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.metroControlBox1.StyleManager = null;
+            this.metroControlBox1.TabIndex = 13;
+            this.metroControlBox1.Text = "metroControlBox1";
+            this.metroControlBox1.ThemeAuthor = "Taiizor";
+            this.metroControlBox1.ThemeName = "MetroDark";
             // 
             // MenuFood
             // 
@@ -285,6 +288,7 @@ namespace ImperialPizzaV2
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuFood";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.Load += new System.EventHandler(this.MenuFood_Load_1);
             this.nightForm1.ResumeLayout(false);
             this.nightForm1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox5)).EndInit();
@@ -299,7 +303,6 @@ namespace ImperialPizzaV2
         #endregion
 
         private ReaLTaiizor.Forms.NightForm nightForm1;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private ReaLTaiizor.Controls.LostButton Water;
         private ReaLTaiizor.Controls.LostButton CheckOut;
         private ReaLTaiizor.Controls.MaterialRadioButton stLouis;
@@ -312,5 +315,6 @@ namespace ImperialPizzaV2
         private ReaLTaiizor.Controls.HopePictureBox hopePictureBox3;
         private ReaLTaiizor.Controls.HopePictureBox hopePictureBox2;
         private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
+        private ReaLTaiizor.Controls.MetroControlBox metroControlBox1;
     }
 }

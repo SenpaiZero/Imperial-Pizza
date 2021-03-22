@@ -76,6 +76,9 @@ namespace ImperialPizzaV2
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            DoubleBuffered = true;
+            this.MaximumSize = this.Size;
         }
 
         private void DashboardForm_Click(object sender, EventArgs e)
