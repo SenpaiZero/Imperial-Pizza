@@ -25,6 +25,10 @@ namespace ImperialPizzaV2
             this.MaximumSize = this.Size;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
+            OrderP1 = 0;
+            OrderP2 = 0;
+            OrderP3 = 0;
+            totalPrice = 0;
         }
 
         public MenuFood()

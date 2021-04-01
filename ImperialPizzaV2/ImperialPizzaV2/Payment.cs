@@ -26,6 +26,14 @@ namespace ImperialPizzaV2
 
         }
 
+        private void logout_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
+            this.Close();
+        }
+
         private void Pay_Click(object sender, EventArgs e)
         {
 
@@ -40,7 +48,6 @@ namespace ImperialPizzaV2
 
         int totalOrderPizza, totalPricePizza, totalOrderDrink, totalPriceDrink;
 
-        private int order;
         public Payment()
         {
             InitializeComponent();
@@ -120,9 +127,7 @@ namespace ImperialPizzaV2
             {
                 MessageBox.Show("Your order has been accepted. Please wait for a text.", "Order successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                backBtn.Text = "Dashboard";
-                isDone = true;
-                MessageBox.Show("Please restart the application if you want to order again", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                backBtn.Text = "Order Again";
 
                 using (SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"))
                 {
@@ -487,21 +492,13 @@ namespace ImperialPizzaV2
 
         }
 
-            private void lostButton1_Click(object sender, EventArgs e)
+        private void lostButton1_Click(object sender, EventArgs e)
         {
-            if (isDone == true)
-            {
-                Dashboard db = new Dashboard();
-                this.Hide();
-                db.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                MenuFood food = new MenuFood();
-                this.Hide();
-                food.ShowDialog();
-            }
+            MenuFood food = new MenuFood();
+            this.Hide();
+            food.ShowDialog();
+            this.Close();
+            
         }
     }
 }

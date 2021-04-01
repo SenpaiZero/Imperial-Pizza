@@ -49,25 +49,19 @@ namespace ImperialPizzaV2
             this.Hide();
             Login login = new Login();
             login.ShowDialog();
+            this.Close();
         }
 
         private void ResetLogin_Click(object sender, EventArgs e)
         {
-            using (SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"))
-            {
-                cn.Open();
-
-                SqlDataAdapter dAD2 = new SqlDataAdapter();
-                dAD2.UpdateCommand = cn.CreateCommand();
-                dAD2.UpdateCommand.CommandText = "UPDATE LoginTable SET username = NULL, password = NULL ";
-                dAD2.UpdateCommand.ExecuteNonQuery();
-                cn.Close();
-            }
-            
+            dashboard_Register dReg = new dashboard_Register();
+            this.Hide();
+            dReg.ShowDialog();
+            this.Close();
         }
 
-        int dOrder1, dOrder2, dOrder3, dOrder4, dOrder5,
-            dPrice1, dPrice2, dPrice3, dPrice4, dPrice5;
+        int dOrder1, dOrder2, dOrder3,
+            dPrice1, dPrice2, dPrice3;
 
         public Dashboard()
         {

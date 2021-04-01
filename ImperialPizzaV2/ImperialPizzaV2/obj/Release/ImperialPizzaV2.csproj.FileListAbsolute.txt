@@ -36,3 +36,6 @@ D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\Imperial Pizza\Imperial
 D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\Imperial Pizza\ImperialPizzaV2\ImperialPizzaV2\bin\Release\ImperialPizzaV2.pdb
 D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\Imperial Pizza\ImperialPizzaV2\ImperialPizzaV2\bin\Release\ReaLTaiizor.dll
 D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\Imperial Pizza\ImperialPizzaV2\ImperialPizzaV2\obj\Release\ImperialPizzaV2.csproj.CopyComplete
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\Imperial Pizza\ImperialPizzaV2\ImperialPizzaV2\obj\Release\ImperialPizzaV2.dashboard_login.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\Imperial Pizza\ImperialPizzaV2\ImperialPizzaV2\obj\Release\ImperialPizzaV2.dashboard_Register.resources
+D:\YGI\Program\C#\Important\ORDE SYSTEM - IMPERIAL PIZZA\Imperial Pizza\ImperialPizzaV2\ImperialPizzaV2\obj\Release\ImperialPizzaV2.announcement.resources

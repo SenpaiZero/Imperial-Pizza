@@ -30,6 +30,7 @@ namespace ImperialPizzaV2
         private void InitializeComponent()
         {
             this.Pay = new ReaLTaiizor.Forms.NightForm();
+            this.logout = new ReaLTaiizor.Controls.LostButton();
             this.backBtn = new ReaLTaiizor.Controls.LostButton();
             this.CheckOut = new ReaLTaiizor.Controls.LostButton();
             this.materialCheckBox1 = new ReaLTaiizor.Controls.MaterialCheckBox();
@@ -50,6 +51,7 @@ namespace ImperialPizzaV2
             // Pay
             // 
             this.Pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.Pay.Controls.Add(this.logout);
             this.Pay.Controls.Add(this.backBtn);
             this.Pay.Controls.Add(this.CheckOut);
             this.Pay.Controls.Add(this.materialCheckBox1);
@@ -77,6 +79,21 @@ namespace ImperialPizzaV2
             this.Pay.TitleBarTextColor = System.Drawing.Color.Gainsboro;
             this.Pay.Click += new System.EventHandler(this.Pay_Click);
             // 
+            // logout
+            // 
+            this.logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.logout.ForeColor = System.Drawing.Color.White;
+            this.logout.HoverColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.logout.Image = null;
+            this.logout.Location = new System.Drawing.Point(494, 364);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(147, 53);
+            this.logout.TabIndex = 16;
+            this.logout.Text = "LOGOUT";
+            this.logout.Click += new System.EventHandler(this.logout_Click);
+            // 
             // backBtn
             // 
             this.backBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -85,7 +102,7 @@ namespace ImperialPizzaV2
             this.backBtn.ForeColor = System.Drawing.Color.White;
             this.backBtn.HoverColor = System.Drawing.SystemColors.ControlDarkDark;
             this.backBtn.Image = null;
-            this.backBtn.Location = new System.Drawing.Point(418, 364);
+            this.backBtn.Location = new System.Drawing.Point(341, 364);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(147, 53);
             this.backBtn.TabIndex = 15;
@@ -100,7 +117,7 @@ namespace ImperialPizzaV2
             this.CheckOut.ForeColor = System.Drawing.Color.White;
             this.CheckOut.HoverColor = System.Drawing.SystemColors.ControlDarkDark;
             this.CheckOut.Image = null;
-            this.CheckOut.Location = new System.Drawing.Point(231, 364);
+            this.CheckOut.Location = new System.Drawing.Point(188, 364);
             this.CheckOut.Name = "CheckOut";
             this.CheckOut.Size = new System.Drawing.Size(147, 53);
             this.CheckOut.TabIndex = 14;
@@ -305,7 +322,6 @@ namespace ImperialPizzaV2
             this.Controls.Add(this.Pay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1440, 860);
-            this.nightTextBox1.Name = "Pay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payment";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
@@ -333,5 +349,6 @@ namespace ImperialPizzaV2
         private ReaLTaiizor.Controls.LostButton CheckOut;
         private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox1;
         private ReaLTaiizor.Controls.LostButton backBtn;
+        private ReaLTaiizor.Controls.LostButton logout;
     }
 }

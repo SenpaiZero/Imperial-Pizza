@@ -82,6 +82,51 @@ namespace ImperialPizzaV2
         {
 
         }
+
+        private void metroControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bigLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bigLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void headerLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nightControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nightLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nightForm1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtconfirmpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

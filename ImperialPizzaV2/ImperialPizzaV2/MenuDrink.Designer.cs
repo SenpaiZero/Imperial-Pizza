@@ -31,6 +31,7 @@ namespace ImperialPizzaV2
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuDrink));
             this.DRINK = new ReaLTaiizor.Forms.NightForm();
+            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.food = new ReaLTaiizor.Controls.LostButton();
             this.CheckOut = new ReaLTaiizor.Controls.LostButton();
             this.sprite = new ReaLTaiizor.Controls.MaterialRadioButton();
@@ -39,7 +40,9 @@ namespace ImperialPizzaV2
             this.hopePictureBox3 = new ReaLTaiizor.Controls.HopePictureBox();
             this.coca = new ReaLTaiizor.Controls.MaterialRadioButton();
             this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
+            this.foxLabel1 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
+            this.foxLabel3 = new ReaLTaiizor.Controls.FoxLabel();
             this.DRINK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox3)).BeginInit();
@@ -49,6 +52,9 @@ namespace ImperialPizzaV2
             // DRINK
             // 
             this.DRINK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.DRINK.Controls.Add(this.foxLabel3);
+            this.DRINK.Controls.Add(this.foxLabel2);
+            this.DRINK.Controls.Add(this.foxLabel1);
             this.DRINK.Controls.Add(this.metroControlBox1);
             this.DRINK.Controls.Add(this.food);
             this.DRINK.Controls.Add(this.CheckOut);
@@ -72,6 +78,34 @@ namespace ImperialPizzaV2
             this.DRINK.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
             this.DRINK.TitleBarTextColor = System.Drawing.Color.Gainsboro;
             this.DRINK.Click += new System.EventHandler(this.DRINK_Click);
+            // 
+            // metroControlBox1
+            // 
+            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
+            this.metroControlBox1.IsDerivedStyle = true;
+            this.metroControlBox1.Location = new System.Drawing.Point(752, 0);
+            this.metroControlBox1.MaximizeBox = false;
+            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeBox = true;
+            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Name = "metroControlBox1";
+            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.metroControlBox1.StyleManager = null;
+            this.metroControlBox1.TabIndex = 15;
+            this.metroControlBox1.Text = "metroControlBox1";
+            this.metroControlBox1.ThemeAuthor = "Taiizor";
+            this.metroControlBox1.ThemeName = "MetroDark";
             // 
             // food
             // 
@@ -107,7 +141,7 @@ namespace ImperialPizzaV2
             // 
             this.sprite.AutoSize = true;
             this.sprite.Depth = 0;
-            this.sprite.Location = new System.Drawing.Point(297, 437);
+            this.sprite.Location = new System.Drawing.Point(330, 437);
             this.sprite.Margin = new System.Windows.Forms.Padding(0);
             this.sprite.MouseLocation = new System.Drawing.Point(-1, -1);
             this.sprite.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -123,7 +157,7 @@ namespace ImperialPizzaV2
             // 
             this.MountainDew.AutoSize = true;
             this.MountainDew.Depth = 0;
-            this.MountainDew.Location = new System.Drawing.Point(530, 437);
+            this.MountainDew.Location = new System.Drawing.Point(523, 437);
             this.MountainDew.Margin = new System.Windows.Forms.Padding(0);
             this.MountainDew.MouseLocation = new System.Drawing.Point(-1, -1);
             this.MountainDew.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -160,7 +194,7 @@ namespace ImperialPizzaV2
             // 
             this.coca.AutoSize = true;
             this.coca.Depth = 0;
-            this.coca.Location = new System.Drawing.Point(45, 437);
+            this.coca.Location = new System.Drawing.Point(68, 437);
             this.coca.Margin = new System.Windows.Forms.Padding(0);
             this.coca.MouseLocation = new System.Drawing.Point(-1, -1);
             this.coca.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -183,33 +217,35 @@ namespace ImperialPizzaV2
             this.hopePictureBox1.TabIndex = 2;
             this.hopePictureBox1.TabStop = false;
             // 
-            // metroControlBox1
+            // foxLabel1
             // 
-            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
-            this.metroControlBox1.IsDerivedStyle = true;
-            this.metroControlBox1.Location = new System.Drawing.Point(752, 0);
-            this.metroControlBox1.MaximizeBox = false;
-            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MinimizeBox = true;
-            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.Name = "metroControlBox1";
-            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
-            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.metroControlBox1.StyleManager = null;
-            this.metroControlBox1.TabIndex = 15;
-            this.metroControlBox1.Text = "metroControlBox1";
-            this.metroControlBox1.ThemeAuthor = "Taiizor";
-            this.metroControlBox1.ThemeName = "MetroDark";
+            this.foxLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.foxLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel1.Location = new System.Drawing.Point(68, 405);
+            this.foxLabel1.Name = "foxLabel1";
+            this.foxLabel1.Size = new System.Drawing.Size(112, 29);
+            this.foxLabel1.TabIndex = 15;
+            this.foxLabel1.Text = "PRICE: 25";
+            // 
+            // foxLabel2
+            // 
+            this.foxLabel2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.foxLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel2.Location = new System.Drawing.Point(321, 405);
+            this.foxLabel2.Name = "foxLabel2";
+            this.foxLabel2.Size = new System.Drawing.Size(99, 29);
+            this.foxLabel2.TabIndex = 16;
+            this.foxLabel2.Text = "PRICE: 25";
+            // 
+            // foxLabel3
+            // 
+            this.foxLabel3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.foxLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.foxLabel3.Location = new System.Drawing.Point(547, 405);
+            this.foxLabel3.Name = "foxLabel3";
+            this.foxLabel3.Size = new System.Drawing.Size(97, 29);
+            this.foxLabel3.TabIndex = 17;
+            this.foxLabel3.Text = "PRICE: 25";
             // 
             // MenuDrink
             // 
@@ -245,5 +281,8 @@ namespace ImperialPizzaV2
         private ReaLTaiizor.Controls.LostButton food;
         private ReaLTaiizor.Controls.LostButton CheckOut;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox1;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel1;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel3;
+        private ReaLTaiizor.Controls.FoxLabel foxLabel2;
     }
 }

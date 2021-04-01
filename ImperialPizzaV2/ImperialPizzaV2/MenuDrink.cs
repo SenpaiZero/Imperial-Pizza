@@ -22,10 +22,13 @@ namespace ImperialPizzaV2
 
         private void MenuDrink_Load(object sender, EventArgs e)
         {
-
+            totalPrice2 = 0;
             this.MaximumSize = this.Size;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;
+            dOrder1 = 0;
+            dOrder2 = 0;
+            dOrder3 = 0;
         }
 
         private void food_Click(object sender, EventArgs e)

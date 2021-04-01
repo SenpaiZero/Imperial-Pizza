@@ -30,12 +30,13 @@ namespace ImperialPizzaV2
         private void InitializeComponent()
         {
             this.DashboardForm = new ReaLTaiizor.Forms.NightForm();
+            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.button1 = new ReaLTaiizor.Controls.Button();
             this.crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
             this.BACK = new ReaLTaiizor.Controls.Button();
             this.button3 = new ReaLTaiizor.Controls.Button();
             this.button2 = new ReaLTaiizor.Controls.Button();
-            this.ResetLogin = new ReaLTaiizor.Controls.Button();
+            this.CreateAccount = new ReaLTaiizor.Controls.Button();
             this.lostPanel2 = new ReaLTaiizor.Controls.LostPanel();
             this.drinkPrice = new System.Windows.Forms.Label();
             this.drinkOrder = new System.Windows.Forms.Label();
@@ -78,7 +79,6 @@ namespace ImperialPizzaV2
             this.moonLabel2 = new ReaLTaiizor.Controls.MoonLabel();
             this.moonLabel1 = new ReaLTaiizor.Controls.MoonLabel();
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
-            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.DashboardForm.SuspendLayout();
             this.lostPanel2.SuspendLayout();
             this.PizzaAndDrinksBtn.SuspendLayout();
@@ -93,7 +93,7 @@ namespace ImperialPizzaV2
             this.DashboardForm.Controls.Add(this.BACK);
             this.DashboardForm.Controls.Add(this.button3);
             this.DashboardForm.Controls.Add(this.button2);
-            this.DashboardForm.Controls.Add(this.ResetLogin);
+            this.DashboardForm.Controls.Add(this.CreateAccount);
             this.DashboardForm.Controls.Add(this.lostPanel2);
             this.DashboardForm.Controls.Add(this.PizzaAndDrinksBtn);
             this.DashboardForm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -111,6 +111,34 @@ namespace ImperialPizzaV2
             this.DashboardForm.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
             this.DashboardForm.TitleBarTextColor = System.Drawing.Color.Gainsboro;
             this.DashboardForm.Click += new System.EventHandler(this.DashboardForm_Click);
+            // 
+            // metroControlBox1
+            // 
+            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
+            this.metroControlBox1.IsDerivedStyle = true;
+            this.metroControlBox1.Location = new System.Drawing.Point(703, 0);
+            this.metroControlBox1.MaximizeBox = false;
+            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeBox = true;
+            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Name = "metroControlBox1";
+            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.metroControlBox1.StyleManager = null;
+            this.metroControlBox1.TabIndex = 14;
+            this.metroControlBox1.Text = "metroControlBox1";
+            this.metroControlBox1.ThemeAuthor = "Taiizor";
+            this.metroControlBox1.ThemeName = "MetroDark";
             // 
             // button1
             // 
@@ -195,24 +223,24 @@ namespace ImperialPizzaV2
             this.button2.TextAlignment = System.Drawing.StringAlignment.Center;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // ResetLogin
+            // CreateAccount
             // 
-            this.ResetLogin.BackColor = System.Drawing.Color.Transparent;
-            this.ResetLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ResetLogin.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.ResetLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ResetLogin.Image = null;
-            this.ResetLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ResetLogin.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.ResetLogin.Location = new System.Drawing.Point(425, 354);
-            this.ResetLogin.Name = "ResetLogin";
-            this.ResetLogin.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.ResetLogin.Size = new System.Drawing.Size(105, 40);
-            this.ResetLogin.TabIndex = 3;
-            this.ResetLogin.Tag = "ResetLogin";
-            this.ResetLogin.Text = "Reset Login";
-            this.ResetLogin.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.ResetLogin.Click += new System.EventHandler(this.ResetLogin_Click);
+            this.CreateAccount.BackColor = System.Drawing.Color.Transparent;
+            this.CreateAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CreateAccount.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.CreateAccount.Image = null;
+            this.CreateAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CreateAccount.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.CreateAccount.Location = new System.Drawing.Point(425, 354);
+            this.CreateAccount.Name = "CreateAccount";
+            this.CreateAccount.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.CreateAccount.Size = new System.Drawing.Size(105, 40);
+            this.CreateAccount.TabIndex = 3;
+            this.CreateAccount.Tag = "ResetLogin";
+            this.CreateAccount.Text = "Create Account";
+            this.CreateAccount.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.CreateAccount.Click += new System.EventHandler(this.ResetLogin_Click);
             // 
             // lostPanel2
             // 
@@ -732,34 +760,6 @@ namespace ImperialPizzaV2
             this.bigLabel1.Text = "PIZZA INFO";
             this.bigLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // metroControlBox1
-            // 
-            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
-            this.metroControlBox1.IsDerivedStyle = true;
-            this.metroControlBox1.Location = new System.Drawing.Point(703, 0);
-            this.metroControlBox1.MaximizeBox = false;
-            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MinimizeBox = true;
-            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.Name = "metroControlBox1";
-            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
-            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.metroControlBox1.StyleManager = null;
-            this.metroControlBox1.TabIndex = 14;
-            this.metroControlBox1.Text = "metroControlBox1";
-            this.metroControlBox1.ThemeAuthor = "Taiizor";
-            this.metroControlBox1.ThemeName = "MetroDark";
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -789,7 +789,7 @@ namespace ImperialPizzaV2
         private ReaLTaiizor.Controls.Button BACK;
         private ReaLTaiizor.Controls.Button button3;
         private ReaLTaiizor.Controls.Button button2;
-        private ReaLTaiizor.Controls.Button ResetLogin;
+        private ReaLTaiizor.Controls.Button CreateAccount;
         private ReaLTaiizor.Controls.LostPanel lostPanel2;
         private ReaLTaiizor.Controls.LostPanel PizzaAndDrinksBtn;
         private ReaLTaiizor.Controls.MoonLabel moonLabel10;

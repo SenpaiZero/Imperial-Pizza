@@ -30,6 +30,7 @@ namespace ImperialPizzaV2
         private void InitializeComponent()
         {
             this.nightForm1 = new ReaLTaiizor.Forms.NightForm();
+            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.DashboardBtn = new ReaLTaiizor.Controls.CrownButton();
             this.nightLinkLabel1 = new ReaLTaiizor.Controls.NightLinkLabel();
             this.lostPanel1 = new ReaLTaiizor.Controls.LostPanel();
@@ -37,7 +38,6 @@ namespace ImperialPizzaV2
             this.loginBtn = new ReaLTaiizor.Controls.LostButton();
             this.txtpassword = new ReaLTaiizor.Controls.MaterialTextBox();
             this.txtusername = new ReaLTaiizor.Controls.MaterialTextBox();
-            this.metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             this.nightForm1.SuspendLayout();
             this.lostPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +63,35 @@ namespace ImperialPizzaV2
             this.nightForm1.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
             this.nightForm1.TitleBarTextColor = System.Drawing.Color.Gainsboro;
             this.nightForm1.Click += new System.EventHandler(this.nightForm1_Click);
+            // 
+            // metroControlBox1
+            // 
+            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
+            this.metroControlBox1.IsDerivedStyle = true;
+            this.metroControlBox1.Location = new System.Drawing.Point(784, 0);
+            this.metroControlBox1.MaximizeBox = false;
+            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeBox = true;
+            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox1.Name = "metroControlBox1";
+            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.metroControlBox1.StyleManager = null;
+            this.metroControlBox1.TabIndex = 14;
+            this.metroControlBox1.Text = "metroControlBox1";
+            this.metroControlBox1.ThemeAuthor = "Taiizor";
+            this.metroControlBox1.ThemeName = "MetroDark";
+            this.metroControlBox1.Click += new System.EventHandler(this.metroControlBox1_Click);
             // 
             // DashboardBtn
             // 
@@ -119,6 +148,7 @@ namespace ImperialPizzaV2
             this.foxLabel1.Size = new System.Drawing.Size(180, 68);
             this.foxLabel1.TabIndex = 3;
             this.foxLabel1.Text = "LOGIN";
+            this.foxLabel1.Click += new System.EventHandler(this.foxLabel1_Click);
             // 
             // loginBtn
             // 
@@ -150,6 +180,7 @@ namespace ImperialPizzaV2
             this.txtpassword.Size = new System.Drawing.Size(280, 50);
             this.txtpassword.TabIndex = 1;
             this.txtpassword.Text = "";
+            this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             // 
             // txtusername
             // 
@@ -165,34 +196,7 @@ namespace ImperialPizzaV2
             this.txtusername.Size = new System.Drawing.Size(280, 50);
             this.txtusername.TabIndex = 0;
             this.txtusername.Text = "";
-            // 
-            // metroControlBox1
-            // 
-            this.metroControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroControlBox1.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.metroControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.metroControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
-            this.metroControlBox1.IsDerivedStyle = true;
-            this.metroControlBox1.Location = new System.Drawing.Point(784, 0);
-            this.metroControlBox1.MaximizeBox = false;
-            this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MaximizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MinimizeBox = true;
-            this.metroControlBox1.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.MinimizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox1.Name = "metroControlBox1";
-            this.metroControlBox1.Size = new System.Drawing.Size(100, 25);
-            this.metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.metroControlBox1.StyleManager = null;
-            this.metroControlBox1.TabIndex = 14;
-            this.metroControlBox1.Text = "metroControlBox1";
-            this.metroControlBox1.ThemeAuthor = "Taiizor";
-            this.metroControlBox1.ThemeName = "MetroDark";
+            this.txtusername.TextChanged += new System.EventHandler(this.txtusername_TextChanged);
             // 
             // Login
             // 

@@ -17,6 +17,7 @@ namespace ImperialPizzaV2
         SqlCommand cmd;
         SqlConnection cn;
         SqlDataReader dr;
+        private static bool isStart = false;
         public Login()
         {
             InitializeComponent();
@@ -29,6 +30,13 @@ namespace ImperialPizzaV2
             DoubleBuffered = true;
             cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True");
             cn.Open();
+
+            if (isStart == false)
+            {
+                isStart = true;
+                announcement ann = new announcement();
+                ann.ShowDialog();
+            }
         }
 
         private void nightLinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -42,38 +50,31 @@ namespace ImperialPizzaV2
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (Payment.isDone != true)
+            if (txtpassword.Text != string.Empty || txtusername.Text != string.Empty)
             {
-                if (txtpassword.Text != string.Empty || txtusername.Text != string.Empty)
+
+                cmd = new SqlCommand("select * from LoginTable where username='" + txtusername.Text + "' and password='" + txtpassword.Text + "'", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
                 {
-
-                    cmd = new SqlCommand("select * from LoginTable where username='" + txtusername.Text + "' and password='" + txtpassword.Text + "'", cn);
-                    dr = cmd.ExecuteReader();
-                    if (dr.Read())
-                    {
-                        dr.Close();
-                        this.Hide();
-                        MenuFood food = new MenuFood();
-                        food.ShowDialog();
-                        cn.Close();
-                        this.Close();
-                        return;
-                    }
-                    else
-                    {
-                        dr.Close();
-                        MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-
+                    dr.Close();
+                    this.Hide();
+                    MenuFood food = new MenuFood();
+                    food.ShowDialog();
+                    cn.Close();
+                    this.Close();
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    dr.Close();
+                    MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
             }
             else
             {
-                MessageBox.Show("Please Restart The Application To Order Again.", "Restart", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -89,13 +90,34 @@ namespace ImperialPizzaV2
 
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
-            Dashboard dashbaord = new Dashboard();
-            dashbaord.ShowDialog();
+            dashboard_login dLogin = new dashboard_login();
             this.Hide();
+            dLogin.ShowDialog();
+            this.Close();
         }
 
         private void nightControlBox1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void metroControlBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foxLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
